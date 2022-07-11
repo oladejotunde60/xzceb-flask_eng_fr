@@ -20,15 +20,21 @@ language_translator.set_service_url(url)
 
 # Translation function: English to French
 
-def english_to_french(englishText):
-    frenchText = language_translator.translate(
+def english_to_french(english_text):
+    """
+# Translation function: English to French
+    """
+    english_text = language_translator.translate(
     text=text_to_translate,
     model_id='en-fr').get_result()
-    return frenchText
+    return english_text
 
     # Translation function: French to English
-def french_to_english(frenchText):
-    englishText = language_translator.translate(
+def french_to_english(french_text):
+    """
+# Translation function: French to English
+    """
+    french_text = language_translator.translate(
     text=text_to_translate,
     model_id='fr-en').get_result()
-    return englishText
+    return french_text
